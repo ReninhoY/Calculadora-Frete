@@ -209,3 +209,11 @@ exitBTN.addEventListener("click",()=>{
     overlay.style.display = "none"
     buscadorCEP.style.display = "none"
 })
+
+window.addEventListener("load",()=>{
+    campos[0].value = ""
+    campos[1].value = ""
+    campos[2].value = ""
+    campos[3].value = ""
+    campos[4].value = ""
+})
