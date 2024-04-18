@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Frete</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+
+    <!-- Conteúdo -->
+    <main>
+        <!-- Conteúdo 1 -->
+        <section class="content">
+            <!-- Título 1 -->
+            <div class="title">
+                <h1 id="title-1">Remetente</h1>
+            </div>
+            <!-- Campos -->
+            <div class="form">
+                <input type="text" class="field" placeholder="Insira o CEP">
+                <input type="text" class="field" placeholder="Insira a rua">
+                <input type="text" class="field" placeholder="Insira o bairro">
+                <input type="text" class="field" placeholder="Insira a cidade">
+                <input type="text" class="field" placeholder="Insira o estado">
+            </div>
+            <h1 id="finalPrice"></h1>
+            <!-- Parte inferior -->
+            <div class="bottom">
+                <button id="btn">Continuar</button>
+            </div>
+        </section>
+
+        <!--Conteúdo 2 -->
+        <section class="content">
+            <!-- Título 2 -->
+            <div class="title">
+                <h1>Calculadora de Frete</h1>
+            </div>
+            <div class="figure">
+                <h1 id="error"></h1>
+                <div class="eye-container">
+                    <div class="eyes"></div>
+                    <div class="eyes"></div>
+                </div>
+                <div class="mouth-container">
+                    <div class="mouth"></div>
+                </div>
+            </div>
+            <h3 id="btnFindCep">Não sabe o CEP? Clique aqui e abra o nosso buscador</h3>
+        </section>
+    </main>
+    <div id="overlay"></div>
+    <div id="find-cep">
+        <div id="exit">X</div>
+        <h1>Descubra o CEP</h1>
+        <p id="erroCEP"></p>
+        <input type="text" class="byLogradouro" placeholder="Insira a UF do estado, ex: SP">
+        <input type="text" class="byLogradouro" placeholder="Insira a cidade">
+        <input type="text" class="byLogradouro" placeholder="Insira o logradouro">
+        <h1 id="cep-found"></h1>
+        <button id="cep-btn">Buscar</button>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
